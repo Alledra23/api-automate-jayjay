@@ -1,0 +1,1 @@
+{"uuid":"00021e0a-2d58-4267-98aa-ba2305b0941f","name":"apiauto.testReqres","children":["da7d3b62-122a-4b6b-b02a-45269ece49c4"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1757915407087,"stop":1757915408791}],"afters":[],"start":1757915406953,"stop":1757915415905}
