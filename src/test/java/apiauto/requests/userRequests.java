@@ -1,15 +1,17 @@
 package apiauto.requests;
 
 import io.restassured.RestAssured;
+import apiauto.utils.ConfigReader;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
 
 public class userRequests {
 
-    // Get list users by page
+    // get list users by page
     public static Response getUsers(int page) {
         return given()
+                .header("x-api-key", ConfigReader.get("api.key"))
                 .queryParam("page", page)
                 .when()
                 .get("/users");

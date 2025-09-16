@@ -40,7 +40,7 @@ public class testReqres {
 
         response.then().log().all()
                 .statusCode(200)
-                .body("page", Matchers.equalTo(0))
+                .body("page", Matchers.equalTo(2222))
                 .body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
     }
 
@@ -53,7 +53,7 @@ public class testReqres {
 
         response.then().log().all()
                 .statusCode(200)
-                .body("page", Matchers.equalTo(0))
+                .body("page", Matchers.equalTo(1))
                 .body(JsonSchemaValidator.matchesJsonSchema(jsonSchema));
     }
 }

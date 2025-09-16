@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apiauto.testReqres" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-15T05:50:08" hostname="Ardellas-MacBook-Pro-2.local" time="6.877">
+<testsuite name="apiauto.testReqres" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-09-16T03:41:05" hostname="Ardellas-MacBook-Pro-2.local" time="3.615">
   <properties/>
-  <testcase name="testGetUsers" classname="apiauto.testReqres" time="6.877"/>
+  <testcase name="testGetUsers" classname="apiauto.testReqres" time="3.205"/>
+  <testcase name="testGetUsersInvalidPage" classname="apiauto.testReqres" time="0.151"/>
+  <testcase name="testGetUsersPageZero" classname="apiauto.testReqres" time="0.182"/>
   <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Mon, 15 Sep 2025 05:50:12 GMT
+Date: Tue, 16 Sep 2025 03:41:06 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -19,20 +21,20 @@ Ratelimit-Policy: 100;w=60
 Ratelimit-Remaining: 98
 Ratelimit-Reset: 60
 Referrer-Policy: strict-origin-when-cross-origin
-Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=S6eqKPiwk9Ougz%2FGr%2FUxFRdL1%2BAZtP%2BOjtNOg6eXN3Q%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1757911072"}],"max_age":3600}
-Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=S6eqKPiwk9Ougz%2FGr%2FUxFRdL1%2BAZtP%2BOjtNOg6eXN3Q%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1757911072"
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=ffwGRCSE%2BXQTavKhl95OZ6Dap5PG3%2F3zH3rqv%2B07W8I%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1757987099"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=ffwGRCSE%2BXQTavKhl95OZ6Dap5PG3%2F3zH3rqv%2B07W8I%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1757987099"
 Vary: Origin, Accept-Encoding
 Via: 1.1 heroku-router
 X-Content-Type-Options: nosniff
 X-Frame-Options: DENY
-X-Request-Id: bd6ab3c2-6f60-70fd-3668-debabf71c2a3
+X-Request-Id: ca95dd6b-113e-9a57-a1d0-ac6c01e6f941
 X-Xss-Protection: 1; mode=block
-Age: 4340
+Age: 6966
 Cache-Control: max-age=14400
 cf-cache-status: HIT
 Server: cloudflare
-CF-RAY: 97f5d85fac25f9b3-SIN
-server-timing: cfL4;desc="?proto=TCP&rtt=25301&min_rtt=17489&rtt_var=11889&sent=7&recv=8&lost=0&retrans=0&sent_bytes=2816&recv_bytes=764&delivery_rate=238446&cwnd=252&unsent_bytes=0&cid=291981a617cc8a73&ts=257&x=0"
+CF-RAY: 97fd58a488bbf922-SIN
+server-timing: cfL4;desc="?proto=TCP&rtt=20708&min_rtt=20033&rtt_var=4721&sent=7&recv=9&lost=0&retrans=0&sent_bytes=2818&recv_bytes=791&delivery_rate=205690&cwnd=252&unsent_bytes=0&cid=7de2c29a04607137&ts=130&x=0"
 
 {
     "page": 2,
@@ -81,6 +83,137 @@ server-timing: cfL4;desc="?proto=TCP&rtt=25301&min_rtt=17489&rtt_var=11889&sent=
             "first_name": "Rachel",
             "last_name": "Howell",
             "avatar": "https://reqres.in/img/faces/12-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Tired of writing endless social media content? Let Content Caddy generate it for you."
+    }
+}
+HTTP/1.1 200 OK
+Date: Tue, 16 Sep 2025 03:41:08 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/"102-A+KeG+nw/YNNRV3xiXWQNAAmVSw"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 97
+Ratelimit-Reset: 7
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=84AQaHnPvY830pgq%2BQhlIIzffKK6A1N4xlPfExCKGNY%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1757993623"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=84AQaHnPvY830pgq%2BQhlIIzffKK6A1N4xlPfExCKGNY%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1757993623"
+Vary: Origin, Accept-Encoding
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 28c710dc-0041-88d6-7e12-23c4f2ef66dd
+X-Xss-Protection: 1; mode=block
+Age: 444
+Cache-Control: max-age=14400
+cf-cache-status: HIT
+Server: cloudflare
+CF-RAY: 97fd58b12ef8ce4e-SIN
+server-timing: cfL4;desc="?proto=TCP&rtt=17499&min_rtt=17014&rtt_var=5173&sent=5&recv=8&lost=0&retrans=0&sent_bytes=2818&recv_bytes=794&delivery_rate=244955&cwnd=252&unsent_bytes=0&cid=904a706fc4016559&ts=57&x=0"
+
+{
+    "page": 2222,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        
+    ],
+    "support": {
+        "url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Tired of writing endless social media content? Let Content Caddy generate it for you."
+    }
+}
+HTTP/1.1 200 OK
+Date: Tue, 16 Sep 2025 03:41:08 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, x-api-key
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Origin: http://localhost:5173
+Etag: W/"41e-bY3U72nulxuwNd/TmihMEHjLmek"
+Nel: {"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Ratelimit-Limit: 100
+Ratelimit-Policy: 100;w=60
+Ratelimit-Remaining: 98
+Ratelimit-Reset: 60
+Referrer-Policy: strict-origin-when-cross-origin
+Report-To: {"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=8QY5WGttj0%2FlwQZhWZk%2FyCJ68ByBSDbdIGjVIAKmwXE%3D\u0026sid=c4c9725f-1ab0-44d8-820f-430df2718e11\u0026ts=1757993652"}],"max_age":3600}
+Reporting-Endpoints: heroku-nel="https://nel.heroku.com/reports?s=8QY5WGttj0%2FlwQZhWZk%2FyCJ68ByBSDbdIGjVIAKmwXE%3D&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&ts=1757993652"
+Vary: Origin, Accept-Encoding
+Via: 1.1 heroku-router
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-Id: 45689965-c4eb-0ee1-03ca-c8023e6ac5b9
+X-Xss-Protection: 1; mode=block
+Age: 416
+Cache-Control: max-age=14400
+cf-cache-status: HIT
+Server: cloudflare
+CF-RAY: 97fd58b21bb35fb4-SIN
+server-timing: cfL4;desc="?proto=TCP&rtt=20331&min_rtt=20013&rtt_var=4423&sent=6&recv=9&lost=0&retrans=0&sent_bytes=2817&recv_bytes=791&delivery_rate=206998&cwnd=252&unsent_bytes=0&cid=68ec35792f83949d&ts=75&x=0"
+
+{
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "first_name": "George",
+            "last_name": "Bluth",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        },
+        {
+            "id": 3,
+            "email": "emma.wong@reqres.in",
+            "first_name": "Emma",
+            "last_name": "Wong",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg"
+        },
+        {
+            "id": 4,
+            "email": "eve.holt@reqres.in",
+            "first_name": "Eve",
+            "last_name": "Holt",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        },
+        {
+            "id": 5,
+            "email": "charles.morris@reqres.in",
+            "first_name": "Charles",
+            "last_name": "Morris",
+            "avatar": "https://reqres.in/img/faces/5-image.jpg"
+        },
+        {
+            "id": 6,
+            "email": "tracey.ramos@reqres.in",
+            "first_name": "Tracey",
+            "last_name": "Ramos",
+            "avatar": "https://reqres.in/img/faces/6-image.jpg"
         }
     ],
     "support": {
